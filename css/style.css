@@ -1,0 +1,410 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+ul{
+	list-style-type:none;
+}
+
+li{
+    text-decoration:none;
+    list-style-type:none;
+}
+
+
+body{
+    font-family:Montserrat;
+    overflow-x: hidden;
+    position:relative;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.lightmode{
+    background-color:white;
+}
+
+.darkmode{
+    background:#1b1b1b;
+}
+
+#htx {
+    animation: fadeIn 1s ease-in-out 1.5s forwards;
+    line-height:1.1em;
+    color:#000039;
+}
+
+#htxtwo {
+    animation: fadeIn 1s ease-in-out 2.5s forwards;
+    color:black;
+    margin-top:15px;
+    font-weight:500;
+}
+
+#toggleon:hover{
+    cursor:pointer;
+}
+
+#toggleoff:hover{
+    cursor:pointer;
+}
+
+.fa-toggle-off{
+    color:white;
+    font-size:27px;
+}
+
+.fa-toggle-on{
+    color:white;
+    font-size:27px;
+}
+
+#toggleon{
+    display:none;
+}
+
+.headlinks li a{
+    color:white;
+}
+
+.headlinks li{
+    display:inline;
+    margin-right:100px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width:90%;
+    margin:auto;
+}
+
+.greenwidth{
+    z-index:10;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: #000039;
+    margin:auto;
+}
+
+.heroflex {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+}
+
+.heroimage{
+    flex-basis:30%;
+    padding-top:40px;
+    flex-basis: 60%;
+}
+
+.herotext{
+    flex-basis:50%;
+    padding-top:122px;
+}
+
+.heroimage img{
+    width:100%;
+}
+
+.herotext p{
+    color:white;
+    font-size:17px;
+    font-weight:300;
+}
+
+.herotext h1{
+    line-height:0.9em;
+    margin-top:10px;
+    font-size:45px;
+}
+
+.herotext button{
+    border-radius: 2px;
+    border:none;
+    background:#1E92D3;
+    color:white;
+    font-size:20px;
+    margin-top:20px;
+    font-weight:400;
+    padding: 10px 25px 10px 25px;
+}
+
+.herotext button a {
+    color:white;
+}
+
+.heroflexx{
+    display: flex;
+    margin:auto;
+    width:80%;
+    justify-content: space-between;
+}
+
+  @keyframes fadeer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .herotext p,
+        .herotext h1,
+
+        .herotext button {
+            opacity: 0;
+        }
+
+.herotext h3,
+.herotext button {
+    opacity: 0;
+}
+
+    .herotext p {
+        animation: fadeIn 1s ease-in-out 0.5s forwards;
+    }
+
+
+    .herotext button {
+        animation: fadeIn 1s ease-in-out 3.5s forwards;
+    }
+
+@media (max-width: 1000px){
+    .head {
+        display:none;
+    }
+
+    .headimage img{
+        width:170px;
+    }
+
+    .allpeople{
+        width:80%;
+        margin:auto;
+        text-align:center;
+        margin-top:110px;
+        margin-bottom:110px;
+    }
+
+    .allpeople p {
+        font-weight:400;
+        margin-top:10px;
+        line-height:1.4em;
+        margin-bottom:20px;
+        font-size:17px;
+    }
+
+    .allpeople h2{
+        line-height:1.2em;
+    }
+
+
+    .mshow {
+        width: 100%;
+        background: red;
+        position: fixed;
+        display: block;
+        z-index:10;
+        margin-top: -10px;
+        background-color: #000039;
+    }
+
+    .circle {
+        display:none;
+    }
+
+    .herotext h1 {
+        color: white;
+        line-height: 0.8em;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .mobileflex {
+        width:90%;
+        padding-top:30px;
+        padding-bottom:15px;
+        align-items:center;
+    }
+
+    .herotext p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .heroflexx {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .fexad h2 {
+        margin-top: 100px;
+        color: white;
+        font-size: 28px;
+    }
+
+    .fexad p {
+        font-size: 16px;
+    }
+
+    .whatishead h2 {
+        font-size: 27px;
+        margin-top: -10px;
+    }
+
+    /* Footer responsive */
+
+.ft{
+    display:block;
+    width:75%;
+    margin:auto;
+}
+
+#sm{
+    margin-bottom:30px;
+}
+
+ .fti p{
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.fti{
+    margin-bottom:50px;
+}
+
+}
+
+@media (max-width: 900px){
+
+    .example{
+        display:block !important;
+    }
+
+    .myinput{
+        float:none !important;
+        margin-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .mysub{
+        margin-left:0px !important;
+    }
+}
+
+@media (max-width: 800px){
+    .heroflex {
+        display: block;
+    }
+
+    .whatishead h1 {
+        font-size: 45px;
+        margin-top: -10px;
+    }
+
+    .whatistext p {
+        margin-top:20px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8em;
+    }
+
+    br{
+        display:none;
+    }
+    .whatisflex {
+        display: block;
+    }
+
+    .heroimage img {
+        margin-top:2px;
+    }
+
+    .heroimage {
+        padding-top: 20px;
+    }
+
+    .cdtimeflex {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 85%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cdtimeflex p {
+        font-size: 17px;
+    }
+
+    .cdflex {
+        display:block;
+    }
+
+    .cdtext h1 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .cdvenue {
+        width:90%;
+        margin:auto;
+        margin-top:20px;
+        margin-bottom:20px;
+        text-align:center;
+        font-size: 14px;
+    }
+
+    .cdmoreinfomain {
+        margin-top: 10px;
+        width: 85%;
+        display: block;
+        margin: auto;
+        align-items: left;
+    }
+
+    .cdmoreinfo {
+        display: block;
+    }
+
+    .dot{
+        display:none;
+    }
+
+    .cdmoreinfotext {
+        margin-left:10px;
+        margin-bottom:10px;
+    }
+
+}

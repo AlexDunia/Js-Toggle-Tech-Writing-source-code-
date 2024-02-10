@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name= "viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hardware and Software Solutions for businesses.">
+<meta name="keyword" content="Fextellar">
+<title> Fextellar </title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="assets/img/favicon.ico" rel="icon">
+<link href="assets/img/apple-touch-icon.html" rel="apple-touch-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bluebg">
+
+          <div>
+
+            <div class="greenwidth">
+
+        <div class="head">
+
+          <div class="headimage">
+            <a href="index.html"> <img src="images/ft.png" width="200px" alt="fextellar"> </a>
+          </div>
+
+          <div class="headlinks">
+            <li>  <a href="index.html"> Home  </a></li>
+            <li> <a  href="Product.html" > Product </a></li></li>
+            <li> <a  href="about.html" > About </a></li></li>
+            <li> <a  href="Contact.html"> Contact </a> </li></li>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-toggle-off" id="toggleoff"></i>
+            <i class="fa-solid fa-toggle-on" id="toggleon"></i>
+          </div>
+
+        </div>
+        </div>
+
+        <div class="heroflex" id="home">
+
+            <div class="herotext">
+                <h1 id="htx"> Unlock Greater Potential Through Technology</h1>
+                <h3 id="htxtwo"> We empower diverse individuals and businesses with advanced hardware and software solutions for success. </h3>
+                <button class="mybtn"> <a href="#join"  class="alllink"> Get in touch  </a> </button>
+            </div>
+
+            <div class="heroimage">
+              <img src="images/FEXDEV.png" width="400px" alt="fextellar">
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/9ff47ec0f8.js" crossorigin="anonymous"></script>
+<script>
+
+  let toggleoff = document.querySelector("#toggleoff");
+  let toggleon = document.querySelector("#toggleon");
+  let herolarge = document.querySelector("#htx");
+  let herosub = document.querySelector("#htxtwo");
+  let mode = localStorage.getItem("mode");
+
+ function updateMode(mode) {
+  if (mode === 'darkmode') {
+    localStorage.setItem('mode', 'darkmode');
+    toggleoff.style.display = 'none';
+    toggleon.style.display = 'block';
+    document.body.classList.add("darkmode");
+    herolarge.style.color = "white";
+    herosub.style.color = "white";
+    document.body.classList.remove('lightmode');
+    console.log('dark mode');
+  } else {
+    localStorage.setItem('mode', 'lightmode');
+    toggleoff.style.display = 'block';
+    toggleon.style.display = 'none';
+    herolarge.style.color = "#000039";
+    herosub.style.color = "black";
+    document.body.classList.remove("darkmode");
+    document.body.classList.add('lightmode');
+    console.log('light mode');
+  }
+}
+
+toggleon.addEventListener('click', function () {
+  updateMode('lightmode');
+});
+
+toggleoff.addEventListener('click', function () {
+  updateMode('darkmode');
+});
+
+
+if (mode === 'darkmode') {
+  updateMode('darkmode');
+} else if (mode === 'lightmode'){
+  updateMode('lightmode');
+}else(updateMode('lightmode'))
+
+</script>
